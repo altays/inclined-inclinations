@@ -1,92 +1,3 @@
-/* using grid */
-/* areas of grid:
-
-laptop layout
-
-header ('creative prompt generator')
-
-consider lowering text body size - move from style.css to here
-
-main
-    content wrapper
-        intro 1 p
-        intro 2 p
-        button
-        text that gets generated -> need to give this enoguh space so that the elements around it don't end up shifting
-
-footer
-    para 1
-    para 2
-
-
-grid rows: 
-
-    1 header - put socials on top, h1 center just below (flex in grid)
-        a socials
-        b h1
-    
-    2  main / content wrapper - center in grid (flex in grid)
-        a
-            intro 1
-            intro 2
-            button
-        
-        b
-            generated text
-
-    3 footer - on bottom 
-        para 1
-        para 2
-
-grid columns: 
-
-    left center right
-    left and right are for space - 1fr each
-    center is for content - 1 to 2 fr
-
-*/
-
-/* mobile layout */
-
-/* 
-
-one column
-
-any sizings are vertical space
-
-header
-
-    socials at top (1fr?)
-
-    h1 just below but bigger (1.5fr?)
-
-content - 4fr
-
-    intro text 1fr
-
-    generate button 1fr
-
-    generated text 2fr
-
-footer - 2fr
-
-    text1 - 1fr
-    text2 - 1fr
-
-*/
-
-
-/* Tablet Layout
-
-Title on left, links on right
-
-
-
-Footer on bottom
-
-*/
-
-
 @media (max-width: 426px) {
 
     /* layout and spacing */
@@ -441,7 +352,7 @@ Footer on bottom
     }
 
     #prompt {
-        font-size: 4em;
+        font-size: 3em;
         padding: 0 24rem;
     }
 
@@ -501,7 +412,7 @@ Footer on bottom
     }
 
     #prompt {
-        font-size: 4em;
+        font-size: 2em;
         padding: 0 24rem;
     }
 

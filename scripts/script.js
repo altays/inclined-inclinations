@@ -4,6 +4,7 @@ window.onload = function() {
     let contentDiv = document.getElementById("content")
     let genButton = document.getElementsByClassName("button")[0]
     let promptPara = document.getElementById("prompt")
+    let introParas = document.getElementsByClassName('intro')
 
     let testCount = "test prompt of a set amount of characters. maybe two stencnes. perhaps three? who knows! Try to code something else because this isn't working";
 
@@ -15,11 +16,14 @@ window.onload = function() {
 
     function updatePrompt(){
         if (promptPara === null || promptPara.textContent === null) {
-            console.log("promptPara is ", null);
             textParaPrompt.textContent = testCount;
             contentDiv.appendChild(textParaPrompt)
-            // testCount++;
         }  
+        if (introParas.length == 1) {
+            for (i = 0; i < introParas.length; i++) {
+                introParas[i].setAttribute('class','hide')
+            }
+        }
     }
 }
 
