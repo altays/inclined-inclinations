@@ -243,7 +243,7 @@ Footer on bottom
     }
 
     i {
-        font-size:3rem;
+        font-size:4rem;
     }
 
     li {
@@ -278,7 +278,7 @@ Footer on bottom
     .button {
         padding: 1.5rem 1.5rem;
         margin: 2.5rem 0rem;
-        font-size: 1.25rem;
+        font-size: 1.75rem;
     }
 
     .container {
@@ -298,12 +298,12 @@ Footer on bottom
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         padding: 1.5rem 0;
     }
 
     i {
-        font-size:3rem;
+        font-size:4.5rem;
     }
 
     li {
@@ -393,10 +393,70 @@ Footer on bottom
 
 }
 
-@media (min-width: 1801px)  {
+@media (min-width: 1801px) and (max-width: 2400px) {
 
     .button {
         padding: 2rem 2rem;
+        margin: 5rem 0rem;
+        font-size: 2.5rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+    }
+
+    footer {
+        padding: 4rem 0rem;
+        margin-bottom:2rem;
+    }
+    
+    .footerPara {
+        font-size: 1.25rem;
+    }
+
+    h1 {
+        font-size: 5.5rem;
+        padding: 4rem 0;
+    }
+
+    i {
+        font-size:6rem;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        flex-direction:row;
+    }
+
+    main {
+        flex: 1 0 auto;
+    }
+
+    .intro {
+        font-size: 3rem;
+    }
+
+    #prompt {
+        font-size: 4em;
+        padding: 0 24rem;
+    }
+
+    #socials > ul {
+        padding-top: 1.5rem;
+        padding: 0 2.25rem;
+        font-size: rem;
+    }
+
+}
+
+@media (min-width: 2401px) and (max-width: 2561px) {
+
+    .button {
+        padding: 2rem 4rem;
         margin: 5rem 0rem;
         font-size: 4rem;
     }
@@ -418,12 +478,12 @@ Footer on bottom
     }
 
     h1 {
-        font-size: 7rem;
+        font-size: 8rem;
         padding: 4rem 0;
     }
 
     i {
-        font-size:8rem;
+        font-size:10rem;
     }
 
     li {
@@ -448,7 +508,7 @@ Footer on bottom
     #socials > ul {
         padding-top: 1.5rem;
         padding: 0 2.25rem;
-        font-size: 2rem;
+        font-size: rem;
     }
 
 }
