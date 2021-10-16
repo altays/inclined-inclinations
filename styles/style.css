@@ -1,0 +1,88 @@
+/* 1. Base */
+
+html {
+    background-color: #8f8ac7;
+    color: #fff;
+    font-family: "Lato", "Roboto", sans-serif;
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    min-height: 100vh;
+    min-width: 300px;
+    overflow-x: hidden;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.308);
+}
+
+a {
+    color: currentColor;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+li {
+    list-style-type:none;
+
+}
+  
+.button {
+    /* default for <button>, but useful for <a> */
+    display: inline-block;
+    cursor: pointer;  
+    text-align: center;
+    text-decoration: none;
+
+    /* create a small space when buttons wrap on 2 lines */
+    margin: 2px 0;
+
+    /* invisible border (will be colored on hover/focus) */
+    border: solid 2px transparent;
+    border-radius: 0.4em;
+    outline: solid transparent;
+
+    /* make sure colors have enough contrast! */
+    color: #ffffff;
+    background-color: #9555af;
+    white-space: nowrap;
+    text-decoration: none;
+
+}
+
+
+
+/* Psuedoclasses */
+
+a:active {
+    transform: scale(0.90) translateY(-2px);
+}
+
+a:focus {
+    transform: scale(1.5) translateY(2px);
+    color:#7d1ba3;
+    opacity: 0.9;
+    outline: solid transparent;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px #9e89a7b4;        
+}
+  
+a:hover {
+    transform: scale(1.5) translateY(2px);
+    color:#7d1ba3;
+    opacity: 0.9;
+}
+
+.button:active {
+    transform: translateY(1px);
+    filter: saturate(90%);
+}
+
+.button:hover {
+    color: #9555af;
+    border-color: currentColor;
+    background-color: #ffffff;
+}
+
+.button:focus {
+    outline: solid transparent;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px #9e89a7b4;
+}
+  

@@ -1,0 +1,454 @@
+/* using grid */
+/* areas of grid:
+
+laptop layout
+
+header ('creative prompt generator')
+
+consider lowering text body size - move from style.css to here
+
+main
+    content wrapper
+        intro 1 p
+        intro 2 p
+        button
+        text that gets generated -> need to give this enoguh space so that the elements around it don't end up shifting
+
+footer
+    para 1
+    para 2
+
+
+grid rows: 
+
+    1 header - put socials on top, h1 center just below (flex in grid)
+        a socials
+        b h1
+    
+    2  main / content wrapper - center in grid (flex in grid)
+        a
+            intro 1
+            intro 2
+            button
+        
+        b
+            generated text
+
+    3 footer - on bottom 
+        para 1
+        para 2
+
+grid columns: 
+
+    left center right
+    left and right are for space - 1fr each
+    center is for content - 1 to 2 fr
+
+*/
+
+/* mobile layout */
+
+/* 
+
+one column
+
+any sizings are vertical space
+
+header
+
+    socials at top (1fr?)
+
+    h1 just below but bigger (1.5fr?)
+
+content - 4fr
+
+    intro text 1fr
+
+    generate button 1fr
+
+    generated text 2fr
+
+footer - 2fr
+
+    text1 - 1fr
+    text2 - 1fr
+
+*/
+
+
+/* Tablet Layout
+
+Title on left, links on right
+
+
+
+Footer on bottom
+
+*/
+
+
+@media (max-width: 426px) {
+
+    /* layout and spacing */
+
+    .button {
+        padding: .5em .5em;
+        margin: 2rem 0rem;
+        font-size: 1.5rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+    }
+
+    footer {
+        padding: 0rem 1rem;
+        margin-bottom:2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding: 1.5rem 0;
+    }
+
+    header {
+        text-align:center;
+        margin: 0rem 0;
+    }
+
+    i {
+        font-size:3rem;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        flex: 1 0 auto;
+    }
+
+    .intro {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    #prompt {
+        font-size: 1.25rem;
+        padding: 0 2rem;
+    }
+
+    #socials > ul {
+        padding-top: 1.5rem;
+        padding: 0 .5rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 427px) and (max-width: 767px){
+
+    .button {
+        padding: 1rem 1rem;
+        margin: 2rem 0rem;
+        font-size: 2rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+    }
+
+    footer {
+        padding: 0rem 0rem;
+        margin-bottom:2rem;
+    }
+    
+    .footerPara {
+        font-size: 1.25rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        padding: 1.5rem 0;
+    }
+
+    i {
+        font-size:3rem;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        flex: 1 0 auto;
+    }
+
+    .intro {
+        font-size: 1.75rem;
+    }
+
+    #prompt {
+        font-size: 1.5rem;
+        padding: 0 5rem;
+    }
+
+    #socials > ul {
+        padding-top: 1.5rem;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+    .button {
+        padding: 1rem 1rem;
+        margin: 2rem 0rem;
+        font-size: 1.25rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+    }
+
+    footer {
+        padding: 0rem 0rem;
+        margin-bottom:2rem;
+    }
+    
+    .footerPara {
+        font-size: 1.25rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        padding: 1.5rem 0;
+    }
+
+    i {
+        font-size:3rem;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        flex-direction:row;
+    }
+
+    main {
+        flex: 1 0 auto;
+    }
+
+    .intro {
+        font-size: 1.5rem;
+    }
+
+    #prompt {
+        font-size: 1.5em;
+        padding: 0 8rem;
+    }
+
+    #socials > ul {
+        /* padding-top: 1.5rem; */
+        padding: 0 .75rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1439px){
+
+    .button {
+        padding: 1.5rem 1.5rem;
+        margin: 2.5rem 0rem;
+        font-size: 1.25rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+    }
+
+    footer {
+        padding: 0rem 0rem;
+        margin-bottom:2rem;
+    }
+    
+    .footerPara {
+        font-size: 1.25rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        padding: 1.5rem 0;
+    }
+
+    i {
+        font-size:3rem;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        flex-direction:row;
+    }
+
+    main {
+        flex: 1 0 auto;
+    }
+
+    .intro {
+        font-size: 2rem;
+    }
+
+    #prompt {
+        font-size: 1.5em;
+        padding: 0 15rem;
+    }
+
+    #socials > ul {
+        padding-top: 1.5rem;
+        padding: 0 2.25rem;
+        font-size: 2rem;
+    }
+
+}
+
+@media (min-width: 1440px) and (max-width: 1800px) {
+
+    .button {
+        padding: 1.5rem 1.5rem;
+        margin: 2.5rem 0rem;
+        font-size: 2.5rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+    }
+
+    footer {
+        padding: 0rem 0rem;
+        margin-bottom:2rem;
+    }
+    
+    .footerPara {
+        font-size: 1.25rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+        padding: 1.5rem 0;
+    }
+
+    i {
+        font-size:5rem;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        flex-direction:row;
+    }
+
+    main {
+        flex: 1 0 auto;
+    }
+
+    .intro {
+        font-size: 2.5rem;
+    }
+
+    #prompt {
+        font-size: 2rem;
+        padding: 0 15rem;
+    }
+
+    #socials > ul {
+        padding-top: 1.5rem;
+        padding: 0 2.25rem;
+        font-size: 2rem;
+    }
+
+}
+
+@media (min-width: 1801px)  {
+
+    .button {
+        padding: 2rem 2rem;
+        margin: 5rem 0rem;
+        font-size: 4rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+    }
+
+    footer {
+        padding: 4rem 0rem;
+        margin-bottom:2rem;
+    }
+    
+    .footerPara {
+        font-size: 1.25rem;
+    }
+
+    h1 {
+        font-size: 7rem;
+        padding: 4rem 0;
+    }
+
+    i {
+        font-size:8rem;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        flex-direction:row;
+    }
+
+    main {
+        flex: 1 0 auto;
+    }
+
+    .intro {
+        font-size: 4rem;
+    }
+
+    #prompt {
+        font-size: 4em;
+        padding: 0 24rem;
+    }
+
+    #socials > ul {
+        padding-top: 1.5rem;
+        padding: 0 2.25rem;
+        font-size: 2rem;
+    }
+
+}
