@@ -85,3 +85,18 @@ a:hover {
     outline: solid transparent;
     box-shadow: 0 0 0 1px #fff, 0 0 0 3px #9e89a7b4;
 }
+
+/* hiding scrollbar */
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}

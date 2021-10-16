@@ -19,11 +19,7 @@ window.onload = function() {
             textParaPrompt.textContent = testCount;
             contentDiv.appendChild(textParaPrompt)
         }  
-        if (introParas.length == 1) {
-            for (i = 0; i < introParas.length; i++) {
-                introParas[i].setAttribute('class','hide')
-            }
-        }
+
     }
 }
 
