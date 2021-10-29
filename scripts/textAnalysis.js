@@ -48,6 +48,8 @@ let simplifyWord = function(word) {
     }
 }
 
+
+
 let promptArray = inputText().prompts
 
 let promptObj = {}
@@ -87,7 +89,12 @@ for (let h = 0; h < promptArray.length; h++) {
     
                 } else {
                     // console.log('this does exist')
-                    promptObj[newWordPOS].push(newWord);
+
+                    // console.log(promptObj[newWordPOS].indexOf(newWord))
+
+                    if (promptObj[newWordPOS].indexOf(newWord) == -1) {
+                        promptObj[newWordPOS].push(newWord);
+                    }
                 }   
             }
        
