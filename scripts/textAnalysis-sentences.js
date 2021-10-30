@@ -29,6 +29,8 @@ let promptObj = {}
 
 // looping over each sentence in the file
 
+// console.log(promptArray)
+
 for (let h = 0; h < promptArray.length; h++) {
 
     let promptSentences = RiTa.sentences(promptArray[h]);
@@ -37,21 +39,16 @@ for (let h = 0; h < promptArray.length; h++) {
 
     let tempSentenceArray = []
 
+    // console.log(promptSentences)
+
     for (let i = 0; i < promptSentences.length; i++) {
         
-        let tokens = RiTa.analyze(promptSentences[i]).tokens.split(" ")
-        // console.log(tokens)
-        // looping over each word in a sentence
+        let individualSentence = promptSentences[i]
 
         let sentencePOSString = ""
 
-        for (let j = 0; j < tokens.length; j++) {            
-
-            console.log(`$${RiTa.pos(tokens[j])}`)
-            
-            // push sentencePOS to the temp sentence ARray
-        }
+        console.log(individualSentence)
     }
 }
 
-writeFile(JSON.stringify(promptObj),outDirectorySentences)
+// writeFile(JSON.stringify(promptObj),outDirectorySentences)

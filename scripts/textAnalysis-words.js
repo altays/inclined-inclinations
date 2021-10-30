@@ -82,7 +82,6 @@ for (let h = 0; h < promptArray.length; h++) {
                 // checking if array exists. 
                     //If it does, add new word if it doesn't already exist. 
                     // If it doesn't, create new array and add new word
-
                 
                 if (Object.keys(promptObj).indexOf(newWordPOS) == -1) {
                     promptObj[newWordPOS]=[] 
