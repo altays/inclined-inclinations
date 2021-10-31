@@ -15,12 +15,12 @@ window.onload = function() {
     genButton.addEventListener('click', updatePrompt);
 
     let rules = new Object(    {
-        start: "$subject $verb $object.",
-        sentences: "lines | lines lines | lines lines lines | lines lines lines lines",
-        lines: "subject object verb. | subject subject verb object | verb verb verb verb",
-        subject: "I | You | They",
-        object: "coffee | bread | milk",
-        verb: "want | hate | like | love"
+        "start": "$sentences",
+        "sentences": "$lines | $lines $lines | $lines $lines $lines | $lines $lines $lines $lines",
+        "lines": "$subject $object $verb. | $subject $subject $verb $object | $verb $verb $verb $verb",
+        "subject": "I | You | They",
+        "object": "coffee | bread | milk",
+        "verb": "want | hate | like | love"
     }) 
     
     let rg = RiTa.grammar(rules);  // load our grammar

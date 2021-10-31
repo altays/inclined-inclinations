@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "words":"node textAnalysis-words.js",
-    "sentences":"node textAnalysis-sentences.js"
+    "sentences":"node textAnalysis-sentences.js",
+    "rita":"node JSON-to-RiTa.js"
   },
   "author": "",
   "license": "ISC",
