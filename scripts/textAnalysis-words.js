@@ -73,8 +73,6 @@ for (let h = 0; h < promptArray.length; h++) {
             // let newWord = simplifyWord(tokens[j])
             let newWord= tokens[j].toLowerCase(); // not attempting to convert nouns and verbs to different conjugations/ singularizations
             let newWordPOS = `${RiTa.pos(newWord)}`
-
-            console.log(`$${RiTa.pos(tokens[j])}`)
             
             // for conciseness, replace this with a regex thing
             if ((newWord !== '\'') && (newWord !== '.') && (newWord !== ',') && (newWord !== '?') && (newWord !== '!') && (newWord !== '(') && (newWord !== ')') && (newWord !== '[') && (newWord !== ']')) {

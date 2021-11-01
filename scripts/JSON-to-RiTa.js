@@ -31,7 +31,7 @@ let sentences = inputText(sentenceURL)
 // data structures
 let tempObj = {
     "start": "$lines",
-    "lines": "$sentences | $sentences $sentences | $sentences $sentences $sentences"
+    "lines": "$sentences | $sentences $sentences"
 }
 let tempSentenceArray = []
 

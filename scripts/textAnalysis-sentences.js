@@ -72,7 +72,14 @@ for (let h = 0; h < promptArray.length; h++) {
         // for expediency, replace the string of punctuation checks w/ regex
         for (let o = 0; o < stringPOSArray.length; o++) {
             if ((stringPOSArray[o] !== '\'') && (stringPOSArray[o] !== '.') && (stringPOSArray[o] !== ',') && (stringPOSArray[o] !== '?') && (stringPOSArray[o] !== '!') && (stringPOSArray[o] !== '(') && (stringPOSArray[o] !== ')') && (stringPOSArray[o] !== '[') && (stringPOSArray[o] !== ']')) {
-                tempSentenceArray.push(`$${stringPOSArray[o]}`)
+                if (stringPOSArray[o]!="nnp") {
+                    if (stringPOSArray[o]=="prp$") {
+                        tempSentenceArray.push(`$${stringPOSArray[o].substring(0,3)}`)
+                    } else {
+                        tempSentenceArray.push(`$${stringPOSArray[o]}`)
+                    }
+                }
+               
             } else {
                 tempSentenceArray.push(`${stringPOSArray[o]}`)
             }
