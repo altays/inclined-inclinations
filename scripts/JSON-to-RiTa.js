@@ -1,8 +1,6 @@
 const fs = require('fs')
-const RiTa = require('rita');
 
-let outDirectorySentences = 'output/rita.json'
-
+let outDirectoryRiTa = 'output/rita.js'
 let wordsURL = 'output/words.json'
 let sentenceURL = 'output/sentences.json'
 
@@ -26,49 +24,27 @@ let writeFile = function(input, directory) {
     }
 }
 
-// use Regex!
-let punctuationCheck = function(character){
-    const regex = /[.,()`!?']/g
-    return regex.test(character);
-    // if punctuation, return false
-    // if not punctuation, return true
-}
-
-// use Regex!
-let punctuationSpaceCheck = function(character) {
-    // returns true or false if entry is an end punctuation mark
-    // used for checking ahead an entry
-    const regex = /[,)!?'.]/g
-    return regex.test(character);
-}
-
-let endPunctuationSpace = function(character) {
-    // if comma, end symbol )/, colon, semicolon - add a space
-    // otherwise, do not add a space
-    const regex = /[,)!?']/g
-    if (regex.test(character)){
-        return `${character} `
-    } else {
-        return character
-    }
-}
-
 // input data
 let words = inputText(wordsURL)
 let sentences = inputText(sentenceURL)
 
 // data structures
-let tempObj = {}
+let tempObj = {
+    "start": "$lines",
+    "lines": "$sentences | $sentences $sentences | $sentences $sentences $sentences"
+}
 let tempSentenceArray = []
-let tempWordObj={}
 
-// procsesing words
-    // read through each array
-    // combine each array with a '|' symbol
-    // add array to a new object
+// combining sentence array entries into one string
+tempSentenceArray = sentences.join('|')
 
-console.log('words',sentences)
+// pulling out keys
+let wordKeys = Object.keys(words) 
 
-// tempObj.sentences = tempSentenceArray;
-// tempObj.words = tempWordObj
-// writeFile(JSON.stringify(tempObj),outDirectorySentences)
+for (let i = 0; i < wordKeys.length; i++) {
+    tempObj[wordKeys[i]] = words[wordKeys[i]].join('|')
+}
+
+tempObj.sentences = tempSentenceArray;
+
+writeFile(`let data = ${JSON.stringify(tempObj)}`,outDirectoryRiTa);

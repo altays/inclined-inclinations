@@ -102,8 +102,8 @@ for (let h = 0; h < promptArray.length; h++) {
     tempStringArray.push(sentenceString.trimEnd())
 
 }
-promptObj.sentences=tempStringArray;
+// promptObj.sentences=tempStringArray;
 
-console.log(promptObj)
+// console.log(promptObj)
 // insert array into object
-writeFile(JSON.stringify(promptObj),outDirectorySentences)
+writeFile(JSON.stringify(tempStringArray),outDirectorySentences)
