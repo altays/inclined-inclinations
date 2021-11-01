@@ -1,5 +1,7 @@
 window.onload = function() {
 
+    // import RiGrammar rules object, load into RiTa.grammar
+
     // let main = document.getElementsByTagName("main")[0]
     let contentDiv = document.getElementById("content")
     let genButton = document.getElementsByClassName("button")[0]
@@ -12,12 +14,8 @@ window.onload = function() {
     
     genButton.addEventListener('click', updatePrompt);
 
-    let rules = new Object(    {
-        start: "$subject $verb $object.",
-        subject: "I | You | They",
-        object: "coffee | bread | milk",
-        verb: "want | hate | like | love"
-    }) 
+    let rules = new Object(data) 
+
     
     let rg = RiTa.grammar(rules);  // load our grammar
 
