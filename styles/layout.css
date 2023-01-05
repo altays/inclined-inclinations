@@ -1,7 +1,3 @@
-#socials {
-    padding: 3rem 0rem 0rem 0rem;
-}
-
 @media (max-width: 426px) {
 
     /* layout and spacing */
@@ -35,7 +31,7 @@
     }
 
     i {
-        font-size:3rem;
+        font-size:2rem;
     }
 
     li {
@@ -48,7 +44,8 @@
     }
 
     .intro {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        padding: 1rem 0rem 0rem 0rem;
     }
 
     p {
@@ -56,7 +53,7 @@
     }
 
     #prompt {
-        font-size: .5rem;
+        font-size: 1.3rem;
         padding: 0 0rem;
     }
 
@@ -64,6 +61,10 @@
         padding-top: 1.5rem;
         padding: 0 .5rem;
         font-size: .5rem;
+    }
+
+    #socials {
+        padding: 2rem 0rem 1rem 0rem;
     }
 
 }
@@ -133,7 +134,72 @@
     .button {
         padding: 1rem 1rem;
         margin: 2rem 0rem;
+        font-size: 1.75rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+    }
+
+    footer {
+        padding: 0rem 0rem;
+        margin-bottom:2rem;
+    }
+    
+    .footerPara {
         font-size: 1.25rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        padding: 1.5rem 0;
+    }
+
+    i {
+        font-size:3rem;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        flex-direction:row;
+    }
+
+    main {
+        flex: 1 0 auto;
+    }
+
+    .intro {
+        font-size: 2rem;
+    }
+
+    #prompt {
+        font-size: 1.75rem;
+        padding: 0 8rem;
+    }
+
+    #socials > ul {
+        /* padding-top: 1.5rem; */
+        padding: 0 .75rem;
+        font-size: 1rem;
+    }
+
+    #socials {
+        padding: 3rem 0rem 0rem 0rem;
+    }
+    
+
+}
+
+@media (min-width: 1024px) and (max-width: 1439px){
+
+    .button {
+        padding: 1.5rem 1.5rem;
+        margin: 2.5rem 0rem;
+        font-size: 1.75rem;
     }
 
     .container {
@@ -172,78 +238,22 @@
     }
 
     .intro {
-        font-size: 1.5rem;
-    }
-
-    #prompt {
-        font-size: 1rem;
-        padding: 0 8rem;
-    }
-
-    #socials > ul {
-        /* padding-top: 1.5rem; */
-        padding: 0 .75rem;
-        font-size: 1rem;
-    }
-
-}
-
-@media (min-width: 1024px) and (max-width: 1439px){
-
-    .button {
-        padding: 1.5rem 1.5rem;
-        margin: 2.5rem 0rem;
-        font-size: 1.75rem;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        height: 100%;
-    }
-
-    footer {
-        padding: 0rem 0rem;
-        margin-bottom:2rem;
-    }
-    
-    .footerPara {
-        font-size: 1.25rem;
-    }
-
-    h1 {
-        font-size: 3rem;
-        padding: 1.5rem 0;
-    }
-
-    i {
-        font-size:4.5rem;
-    }
-
-    li {
-        display: flex;
-        justify-content: center;
-        flex-direction:row;
-    }
-
-    main {
-        flex: 1 0 auto;
-    }
-
-    .intro {
         font-size: 2rem;
     }
 
     #prompt {
-        font-size: 1rem;
+        font-size: 2rem;
         padding: 0 15rem;
     }
 
     #socials > ul {
         padding-top: 1.5rem;
         padding: 0 2.25rem;
-        font-size: 2rem;
+        font-size: .5rem;
+    }
+
+    #socials {
+        padding: 3rem 0rem 0rem 0rem;
     }
 
 }
@@ -296,14 +306,18 @@
     }
 
     #prompt {
-        font-size: 4rem;
+        font-size: 3rem;
         padding: 0 15rem;
     }
 
     #socials > ul {
         padding-top: 1.5rem;
         padding: 0 2.25rem;
-        font-size: 2rem;
+        font-size: 5rem;
+    }
+
+    #socials {
+        padding: 4rem 0rem 0rem 0rem;
     }
 
 }
@@ -363,7 +377,11 @@
     #socials > ul {
         padding-top: 1.5rem;
         padding: 0 2.25rem;
-        font-size: rem;
+        font-size: 2rem;
+    }
+
+    #socials {
+        padding: 5rem 0rem 0rem 0rem;
     }
 
 }
@@ -392,13 +410,17 @@
         font-size: 1.25rem;
     }
 
+    header {
+        padding: 1rem 0rem 0rem 0rem;
+    }
+
     h1 {
-        font-size: 8rem;
+        font-size: 10rem;
         padding: 4rem 0;
     }
 
     i {
-        font-size:10rem;
+        font-size:8rem;
     }
 
     li {
@@ -412,11 +434,11 @@
     }
 
     .intro {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     #prompt {
-        font-size: 2em;
+        font-size: 4em;
         padding: 0 24rem;
     }
 
@@ -424,6 +446,10 @@
         padding-top: 1.5rem;
         padding: 0 2.25rem;
         font-size: rem;
+    }
+
+    #socials {
+        padding: 5rem 0rem 0rem 0rem;
     }
 
 }
