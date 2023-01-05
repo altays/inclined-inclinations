@@ -8,7 +8,8 @@
     "words":"node textAnalysis-words.js",
     "sentences":"node textAnalysis-sentences.js",
     "rita":"node JSON-to-RiTa.js",
-    "generate": "npm run words & npm run sentences & npm run rita"
+    "generate": "npm run words & npm run sentences & npm run rita",
+    "parse": "node parseToJSON.js"
   },
   "author": "",
   "license": "ISC",

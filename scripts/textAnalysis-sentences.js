@@ -23,7 +23,6 @@ let writeFile = function(input, directory) {
     }
 }
 
-// use Regex!
 let punctuationCheck = function(character){
     const regex = /[.,()`!?']/g
     return regex.test(character);
@@ -31,7 +30,6 @@ let punctuationCheck = function(character){
     // if not punctuation, return true
 }
 
-// use Regex!
 let punctuationSpaceCheck = function(character) {
     // returns true or false if entry is an end punctuation mark
     // used for checking ahead an entry
@@ -52,7 +50,6 @@ let endPunctuationSpace = function(character) {
 
 let promptArray = inputText().prompts
 
-let promptObj = {}
 let tempStringArray= []
 
 // looping over each sentence in the file
@@ -109,8 +106,5 @@ for (let h = 0; h < promptArray.length; h++) {
     tempStringArray.push(sentenceString.trimEnd())
 
 }
-// promptObj.sentences=tempStringArray;
 
-// console.log(promptObj)
-// insert array into object
 writeFile(JSON.stringify(tempStringArray),outDirectorySentences)

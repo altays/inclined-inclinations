@@ -14,8 +14,7 @@ window.onload = function() {
     
     genButton.addEventListener('click', updatePrompt);
 
-    let rules = new Object(data) 
-
+    let rules = new Object(data); 
     
     let rg = RiTa.grammar(rules);  // load our grammar
 
@@ -28,5 +27,3 @@ window.onload = function() {
 
     }
 }
-
-

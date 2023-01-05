@@ -14,6 +14,8 @@ Want to use the words from Brian Eno's 'Oblique Strategies' with the grammatical
 
 If you have Node.js and a code editor, you can do this by cloning the repo, dropping JSON into the 'input' folder, and running 'npm run generate' - this will analyze the words and sentence structures and output json files, then recombine those files into a js file that gets used by the index.html file. You can also run these independantly to mix and match files (i.e., running the word analysis over 'Oblique Strategies' and the grammar analysis over 'Frankenstein'), then run the 'npm run rita' command to combine them together.
 
+Keep in mind that the 'textAnalysis' js files indicate what file is being loaded, where it is being loaded from, where it will be saved, and what it will be saved as. Consider updating these (and putting any json files into the 'input' folder) if you want to use other files. 
+
 Future improvements include creating a script to break large blocks of text into json files to make implementation of new text easier as well as adding pre-formed grammatical patterns for more sensical output.
 
 # acknowledgements

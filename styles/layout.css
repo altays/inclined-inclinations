@@ -1,3 +1,7 @@
+#socials {
+    padding: 3rem 0rem 0rem 0rem;
+}
+
 @media (max-width: 426px) {
 
     /* layout and spacing */
@@ -22,7 +26,7 @@
 
     h1 {
         font-size: 2rem;
-        padding: 1.5rem 0;
+        padding: 0rem 0;
     }
 
     header {
@@ -44,7 +48,7 @@
     }
 
     .intro {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     p {
@@ -52,14 +56,14 @@
     }
 
     #prompt {
-        font-size: 1.25rem;
-        padding: 0 2rem;
+        font-size: .5rem;
+        padding: 0 0rem;
     }
 
     #socials > ul {
         padding-top: 1.5rem;
         padding: 0 .5rem;
-        font-size: 1rem;
+        font-size: .5rem;
     }
 
 }
@@ -111,7 +115,7 @@
     }
 
     #prompt {
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 0 5rem;
     }
 
@@ -172,7 +176,7 @@
     }
 
     #prompt {
-        font-size: 1.5em;
+        font-size: 1rem;
         padding: 0 8rem;
     }
 
@@ -232,7 +236,7 @@
     }
 
     #prompt {
-        font-size: 1.5em;
+        font-size: 1rem;
         padding: 0 15rem;
     }
 
@@ -292,7 +296,7 @@
     }
 
     #prompt {
-        font-size: 2rem;
+        font-size: 4rem;
         padding: 0 15rem;
     }
 
@@ -352,7 +356,7 @@
     }
 
     #prompt {
-        font-size: 3em;
+        font-size: 2.5em;
         padding: 0 24rem;
     }
 
